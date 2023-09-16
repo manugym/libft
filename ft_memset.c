@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manumuno <manumuno@student.42.fr>          +#+  +:+       +#+        */
+/*   By: manumuno <manumuno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 14:01:49 by manumuno          #+#    #+#             */
-/*   Updated: 2023/09/16 15:16:58 by manumuno         ###   ########.fr       */
+/*   Created: 2023/09/16 19:07:51 by manumuno          #+#    #+#             */
+/*   Updated: 2023/09/16 20:08:03 by manumuno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+void	*ft_memset(void *str, int c, size_t len)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+	unsigned char	*temp;
+
+	temp = (unsigned char *)str;
+	while (len > 0)
+	{
+		*temp = c;
+		temp++;
+		len--;
+	}
+	return (str);
 }
