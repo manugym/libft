@@ -6,7 +6,7 @@
 /*   By: manumuno <manumuno@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 18:29:24 by manumuno          #+#    #+#             */
-/*   Updated: 2023/09/16 19:03:18 by manumuno         ###   ########.fr       */
+/*   Updated: 2023/10/04 12:48:24 by manumuno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 size_t	ft_strlen(const char *s)
 {
 	size_t	len;
-	len = 0;
 
+	len = 0;
 	while (*s != '\0')
 	{
 		len++;
